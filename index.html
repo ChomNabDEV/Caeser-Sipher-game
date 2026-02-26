@@ -81,15 +81,16 @@
     />
     <script>
       function playSound(event) {
-        event.preventDefault(); // stop link navigation
+        event.preventDefault();
 
         alert("Stop! You are not allowed to click this link. 🙊🙊");
 
         const audio = document.getElementById("bg-sound");
 
-        audio.volume = 0.5; // optional (0.0 - 1.0)
+        audio.volume = 0.5;
         audio.play().catch((err) => console.log("Autoplay blocked:", err));
       }
+      //FU7 ylghr (key 3)
     </script>
   </body>
 </html>
